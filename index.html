@@ -39,7 +39,7 @@
         const analytics = getAnalytics(app);
         const auth = getAuth(app);
         const provider = new GoogleAuthProvider(app);
-        googlebtn.AddEventListener('click',(e)=>{
+        googlebtn.addEventListener('click',(e)=>{
             signInWithRedirect(auth, provider);
             getRedirectResult(auth)
   .then((result) => {
